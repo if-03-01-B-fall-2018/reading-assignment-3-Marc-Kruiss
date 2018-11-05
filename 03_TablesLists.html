@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lists and Tables</title>
+  </head>
+  <body>
+  <h2>HTML List</h2>
+  <h3>Ungeordnete Listr ("ul")</h3>
+  <p>Es gibt verschiedene Aufzählungszeichen, welche man auf eine Liste anwenden kann:</p>
+  <h4>Aufzählungszeichenlhlungszeichen:</h4>
+  <ul>
+    <li>disc        "list-style-type:disc"</li>
+    <li>Circle      "list-style-type:circle"</li>
+    <li>Square      "list-style-type:square"</li>
+    <li>None        "list-style-type:none"</li>
+  </ul>
+
+  <h3>Geordnete Liste ("ol")</h3>
+
+  <ul>
+    <dt>Überschrift</dt>
+    <li>type = "1"      Nummeriert</li>
+    <li>type = "A"      Großes Alphabet</li>
+    <li>type = "a"      kleines Alphabet</li>
+    <li>type = "I"      große römische Ziffern</li>
+    <li>type = "i"      kleine römische Ziffern</li>
+  </ul>
+
+  <h3>HTML List Tags</h3>
+  <ul>
+    <li> < ul >        Deffiniert eine ungeordnete Liste</li>
+    <li> < ol >        Deffiniert eine geordnete Liste</li>
+    <li> < li >        Deffiniert ein Item in der Liste</li>
+    <li> < dl >        Deffiniert eine Description List</li>
+    <li> < dt >        Deffiniert einen Term in der Description List</li>
+    <li> < dd >        Deffiniert eine Beschreibung unter einem Term</li>
+  </ul>
+
+
+  <h2>CSS List Aufzählungszeichen</h2>
+  <p>Mithilfe des Kommandos list-style-type kann in css und in html das Aufzählungszeichen
+  festgelegt werden:</p>
+
+  <b>Beispiel:</b>
+  ul.a {
+    list-style-type: circle;
+  }
+
+ul.b {
+    list-style-type: square;
+  }
+
+  <p>Eigenes Aufzählungszeichen einfügen:</p>
+  <b>Beispiel:</b><br>
+  ul {<br>
+    list-style-image: url('sqpurple.gif');<br>
+  }<br>
+
+  <p>Position des Aufzählungszeichen wählen</p>
+  <p>Mithile des Kommandos list-style-position legt man entweder insinde oder outside fest.</p>
+  <b>Beispiel:</b><br>
+  ul.a {<br>
+    list-style-position: outside;<br>
+  }<br>
+
+ul.b {<br>
+    list-style-position: inside;<br>
+  }<br>
+
+  <b> <p>Um die Aufzählungszeichen auszuschalten, also keine anzuzeigen, benutzt man den Kommand list-style-type:none</p> </b>
+
+  <p>Um die Einrückungen zu entfernen, muss man "margin" und "padding" auf 0 setzen.</p>
+  <b>Beispiel:</b><br>
+  ul {<br>
+    list-style-type: none;<br>
+    margin: 0;<br>
+    padding: 0;<br>
+  }
+
+  <h2>HTML Tables</h2>
+  <p>Nun werden die Grundkommandos bzw Tags für die Erstellung eines Tables in HTML aufgezählt:</p>
+
+  <ol>
+    <li> < table >         Der Tag, um einen neuen Table zu erstellen</li>
+    <li> < tr >            Deffiniert eine neue Zeile (Row)</li>
+    <li> < th >            Die Header werden mit einem th eingeleitet bzw deffiniert</li>
+    <li> < td >            Steht für table data und wird für die Deffinierung neuen Contents verwendet</li>
+  </ol>
+
+  <b>Beispiel für einen Table:</b>
+  <table style="width:100%">
+ <tr>
+   <th>Firstname</th>
+   <th>Lastname</th>
+   <th>Age</th>
+ </tr>
+ <tr>
+   <td>Jill</td>
+   <td>Smith</td>
+   <td>50</td>
+ </tr>
+ <tr>
+   <td>Eve</td>
+   <td>Jackson</td>
+   <td>94</td>
+ </tr>
+</table>
+
+<h2>CSS Tables</h2>
+<h3>Borders</h3>
+<p>Um eine Border zu zeichnen, verwendet man den command border:</p>
+<b>Beispiel:</b>
+table,th,td{<br>
+  border: 1px solid black;<br>
+}<br>
+
+<p>Nun kann es natürlich sein, dass man nur eine Umrandung (Linie) hat.
+Dafür schreibt man unter dem border: noch border-collapse: collap</p>
+<b>Beispiel:</b>
+table,th,td{<br>
+  border: 1px solid black;
+  border-collapse: collapse;
+}<br>
+
+<p>Um die Größe der Zellen zu ändern verwendet man den Kommand padding Xpx</p>
+<p>Mithilfe des Kommands text-align: right/centre/left kann man die Positionierung des Textes ändern.</p>
+
+
+  </body>
+</html>
